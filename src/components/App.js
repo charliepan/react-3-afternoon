@@ -59,7 +59,7 @@ class App extends Component {
 
           <Compose createPostFn={this.createPost}/>
           {
-            posts.map(post => <Post key={post.id} text={post.text.text} date={post.date} id={post.id} updatePostFn={this.updatePost} deletePostFn={this.deletePost}/>)
+            posts.map(post => <Post key={post.id} text={post.text} date={post.date} id={post.id} updatePostFn={this.updatePost} deletePostFn={this.deletePost}/>)
           }
         </section>
       </div>
